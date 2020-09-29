@@ -4,8 +4,8 @@ const displayOptions = {
     bg: "white", // background
     fg: "dimGrey", // foreground
     fontFamily: "Fira Mono", // font (use a mono)
-    width: 25,
-    height: 20, // canvas height and width
+    width: 20,
+    height: 17, // canvas height and width
     fontSize: 18, // canvas fontsize
     forceSquareRatio: true // make the canvas squared ratio
   };
@@ -90,7 +90,7 @@ const displayOptions = {
     },
     // make it impossible to pass through if across an obstacle
     isPassable: function (x, y) {
-      if (GameWorld.map[x][y] === "+" || GameWorld.map[x][y] === "🏩") {
+      if (GameWorld.map[x][y] === "🏩") {
         return false;
       } else {
         return true;
